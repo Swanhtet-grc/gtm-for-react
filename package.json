@@ -1,7 +1,7 @@
 {
-  "name": "react-gtm-module",
-  "version": "2.0.11",
-  "description": "React Google Tag Manager Module",
+  "name": "gtm-for-react",
+  "version": "1.0.2",
+  "description": "Google Tag Manager - React",
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint .",
@@ -12,17 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alinemorelli/react-gtm"
+    "url": "https://github.com/Swan-Appvantage/gtm-for-react"
   },
   "author": {
-    "name": "Aline Morelli",
-    "email": "aline.morelliw@gmail.com",
-    "url": "https://github.com/alinemorelli"
+    "name": "Swan Htet",
+    "email": "swanhtet@appvantage.asia",
+    "url": "https://github.com/Swan-Appvantage"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alinemorelli/react-gtm/issues"
-  },
   "homepage": "",
   "keywords": [
     "react",

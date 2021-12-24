@@ -1,9 +1,9 @@
-[![Build Status](https://img.shields.io/travis/alinemorelli/react-gtm/master.svg?style=flat-square)](https://travis-ci.org/alinemorelli/react-gtm)
-[![npm version](https://img.shields.io/npm/v/react-gtm-module.svg?style=flat-square)](https://www.npmjs.com/package/react-gtm-module)
-[![npm downloads](https://img.shields.io/npm/dm/react-gtm-module.svg?style=flat-square)](https://www.npmjs.com/package/react-gtm-module)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://www.npmjs.com/package/gtm-for-react)
+[![npm version](https://img.shields.io/npm/v/gtm-for-react.svg?style=flat-square)](https://www.npmjs.com/package/gtm-for-react)
+[![npm downloads](https://img.shields.io/npm/dm/gtm-for-react.svg?style=flat-square)](https://www.npmjs.com/package/gtm-for-react)
 
-# react-gtm-module
-### React Google Tag Manager Module
+# gtm-for-react
+### React Google Tag Manager (with nonce support)
 
 This is a Javascript module to [React](https://facebook.github.io/react/) based apps that implement Google Tag Manager. It is designed to use [GTM](https://developers.google.com/tag-manager/quickstart) snippet.
 
@@ -14,7 +14,7 @@ You can easily use custom dataLayer, multiple dataLayers and additional events.
 [npm](https://www.npmjs.com/):
 
 ```bash
-npm install react-gtm-module --save
+npm install gtm-for-react --save
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ import Router from 'react-router'
 import routes from './routes'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'gtm-for-react'
 
 const tagManagerArgs = {
     gtmId: 'GTM-000000'
@@ -53,7 +53,7 @@ import Router from 'react-router'
 import routes from './routes'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'gtm-for-react'
 
 const tagManagerArgs = {
     gtmId: 'GTM-000000',
@@ -85,7 +85,7 @@ import Router from 'react-router'
 import routes from './routes'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'gtm-for-react'
 
 const tagManagerArgs = {
     gtmId: 'GTM-000000',
@@ -106,7 +106,7 @@ And send your data in each page you want
 import React from 'react'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'gtm-for-react'
 
 const tagManagerArgs = {
     dataLayer: {
@@ -146,7 +146,7 @@ import Router from 'react-router'
 import routes from './routes'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'gtm-for-react'
 
 const tagManagerArgs = {
     gtmId: 'GTM-000000',
@@ -175,7 +175,7 @@ import Router from 'react-router'
 import routes from './routes'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'gtm-for-react'
 
 const tagManagerArgs = {
     gtmId: 'GTM-000000',
@@ -205,6 +205,7 @@ Look for gtm_auth and gtm_preview
 |events| `Object`| No | Additional events such as 'gtm.start': new Date().getTime(),event:'gtm.js'.|
 |auth| `String` | No | used to set environments. |
 |preview| `String` | No | used to set environments, something like `env-00`. |
+|nonce| `String` | No | used to add a [nonce](https://developers.google.com/tag-manager/web/csp) |
 
 
 ### Note:
